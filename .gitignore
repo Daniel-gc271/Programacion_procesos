@@ -1,0 +1,34 @@
+# Carpeta de metadatos del espacio de trabajo (Workspace)
+.metadata/
+
+# Archivos de configuración locales específicos del usuario
+.settings/
+
+# Archivos de configuración del proyecto (opcional: quitar '#' si no quieres compartirlos)
+#.project
+#.classpath
+#.cproject
+#.autotools
+
+# Ejecución y lanzamiento externo
+*.launch
+
+# Historial y logs locales de Eclipse
+*.log
+.recommenders/
+
+# Plugins y frameworks específicos en Eclipse
+.factorypath
+.buildpath
+.target
+.texlipse
+.springBeans
+.pydevproject
+.cache-main
+
+# Archivos temporales o generados
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
