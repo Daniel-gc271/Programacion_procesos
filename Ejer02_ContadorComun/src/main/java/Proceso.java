@@ -15,15 +15,19 @@ public class Proceso extends Thread {
     public void run() {
 
         do  {
-
-            System.out.println(
-                //"Soy el proceso " + numeroProceso +
-            	"Soy el proceso " + this.currentThread().getName() +            		
-                " y el contador va por " + contador.getNumero()
-            );
-            int aux=contador.getNumero();
-            aux++;
-            contador.setNumero(aux);
+        	synchronized (contador) {
+        		int aux=contador.getNumero();
+                aux++;
+                contador.setNumero(aux);
+           	}
+           	
+               System.out.println(
+                   //"Soy el proceso " + numeroProceso +
+               	"Soy el proceso " + this.currentThread().getName() +            		
+                   " y el contador va por " + contador.getNumero()
+               );
+			
+        	          
 
         } while (contador.getNumero() < 1000);
     }
