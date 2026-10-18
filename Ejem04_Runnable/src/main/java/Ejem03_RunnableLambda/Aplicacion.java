@@ -4,7 +4,7 @@ public class Aplicacion {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		/*
 		Runnable runnable = new Runnable() {
 			
 			@Override
@@ -13,7 +13,9 @@ public class Aplicacion {
 				System.out.println("Hola desde el hilo");
 			}
 		};
-		
+		*/
+Runnable runnable = () -> System.out.println("Hola desde el hilo");
+
 		for (int i = 0; i < 5; i++) {
 			Thread proceso= new Thread(runnable);
 			proceso.start();
