@@ -16,7 +16,10 @@ public class Aplicacion {
 	                System.out.printf("Soy Proceso P y el contador actual es %d. He aparecido: %d veces\n", 
 	                                  contComun.getNumero(), aparicionesP);
 	            }
+	            
 	        };
+	        Thread hiloProcesoP = new Thread(tareaProcesoP, "Proceso P");
+	        hiloProcesoP.start();
 		
 			while (contComun.getNumero()<1000) {
 				apariciones++;
