@@ -9,6 +9,7 @@ public class Contador {
 	public synchronized void setNumero(int numero) {
 		this.numero = numero;
 	}
-	public synchronized void  incrementarNumero() {this.numero++;}
+	public synchronized void  incrementarNumero() {
+		this.numero++;}
 	
 }
